@@ -25,7 +25,7 @@ function formatDate(date: Date) {
 }
 
 const MonthBtn = ({ n }: { n: number }) => {
-  const { setInicio, setFinal } = useData();
+  const { setStart, setEnd } = useData();
 
   function setMonth(n: number) {
     const date = new Date();
@@ -33,8 +33,8 @@ const MonthBtn = ({ n }: { n: number }) => {
 
     const firstDay = new Date(date.getFullYear(), date.getMonth(), 1);
     const lastDay = new Date(date.getFullYear(), date.getMonth() + 1, 0);
-    setInicio(formatDate(firstDay));
-    setFinal(formatDate(lastDay));
+    setStart(formatDate(firstDay));
+    setEnd(formatDate(lastDay));
   }
 
   return (
