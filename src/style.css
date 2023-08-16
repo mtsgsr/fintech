@@ -80,3 +80,31 @@ ul {
   padding: var(--gap-md);
   gap: var(--gap-md);
 }
+
+.summary {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.summary h2 {
+  font-size: 1.5rem;
+  margin-bottom: var(--gap-md);
+  color: var(--color-1);
+}
+
+.sale {
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  gap: var(--gap-md);
+  margin-bottom: var(--gap-s);
+  align-items: center;
+}
+
+.sale div:last-child {
+  justify-self: end;
+}
+
+.sale a {
+  text-decoration: none;
+  color: inherit;
+}
