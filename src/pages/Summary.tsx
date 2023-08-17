@@ -1,3 +1,4 @@
+import SalesGraph from "../components/SalesGraph";
 import { useData } from "../context/DataContext";
 
 const Summary = () => {
@@ -35,7 +36,9 @@ const Summary = () => {
           </span>
         </div>
       </div>
-      <div className="box mb">Gráficos</div>
+      <div className="box mb">
+        <SalesGraph data={data} />
+      </div>
     </section>
   );
 };
