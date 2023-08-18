@@ -1,13 +1,14 @@
 html {
-  --color-1: #463220;
-  --color-2: #66593c;
-  --color-3: #eceadd;
-  --color-4: #f7f8f5;
-  --color-5: #ffffff;
+  --color-1: #f2f2f2;
+  --color-2: #f4f3f2;
+  --color-3: #161616;
+  --color-4: #202020;
+  --color-5: #191919;
   --gap-s: 0.625rem;
   --gap-md: 1.25rem;
   --font-default: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     "Noto Sans", Roboto, "Open Sans", Helvetica, Arial, sans-serif;
+  color-scheme: dark;
 }
 
 body {
@@ -91,7 +92,7 @@ ul {
 .sidenav li span {
   width: 2rem;
   height: 2rem;
-  background-color: var(--color-4);
+  background-color: var(--color-2);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -107,8 +108,12 @@ ul {
   padding: var(--gap-s) 0;
 }
 
+.sidenav li:not(:nth-child(-n + 2)) a {
+  pointer-events: none;
+}
+
 .sidenav li:hover span {
-  background-color: var(--color-3);
+  transform: scale(1.05);
 }
 
 .daterange {

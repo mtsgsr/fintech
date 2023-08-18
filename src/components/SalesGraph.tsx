@@ -44,19 +44,25 @@ const SalesGraph = ({ data }: { data: ISale[] }) => {
       <LineChart data={transformedData}>
         <XAxis dataKey="data" />
         <YAxis />
-        <Tooltip />
+        <Tooltip
+          contentStyle={{
+            backgroundColor: "var(--color-5)",
+            border: "2px solid var(--color-4)",
+            borderRadius: "var(--gap-s)",
+          }}
+        />
         <Legend />
-        <Line type="monotone" dataKey="pago" stroke="#ff7300" strokeWidth={3} />
+        <Line type="monotone" dataKey="pago" stroke="#7ee599" strokeWidth={3} />
         <Line
           type="monotone"
           dataKey="processando"
-          stroke="#387908"
+          stroke="#e29b37"
           strokeWidth={3}
         />
         <Line
           type="monotone"
           dataKey="falha"
-          stroke="#222222"
+          stroke="#c92c4b"
           strokeWidth={3}
         />
       </LineChart>

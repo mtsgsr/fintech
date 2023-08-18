@@ -1,7 +1,7 @@
 import React from "react";
 
 const style: React.CSSProperties = {
-  border: "var(--gap-s) solid var(--color-3)",
+  border: "var(--gap-s) solid var(--color-2)",
   borderRightColor: "var(--color-4)",
   width: "var(--gap-md)",
   height: "var(--gap-md)",
